@@ -13,8 +13,9 @@
 import getir from '../composable/jsondata';
 export default {
   setup(){
+    const uri = "https://jsonplaceholder.typicode.com/todos";
     const { contents, err, gitgetir} = getir();
-    gitgetir();
+    gitgetir(uri);
     return {contents,err};
   }    
 }
